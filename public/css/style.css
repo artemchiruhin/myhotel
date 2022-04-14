@@ -1,0 +1,493 @@
+/* Переменные */
+:root {
+    --color-dark: #222222;
+    --color-red: #F74F4D;
+    --color-grey: #D3D1D2;
+    --color-white: #FDECE2;
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.alert {
+    margin: 20px 0;
+}
+
+.btn-red {
+    background-color: var(--color-red);
+    color: #fff;
+    border: 1px solid var(--color-red);
+}
+
+.btn-red:hover {
+    background-color: transparent;
+    color: var(--color-red);
+}
+
+.btn-red-outline {
+    background-color: transparent;
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+.btn-red-outline:hover {
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+.text-red {
+    color: var(--color-red);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.fade-in-left {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-top {
+    animation: fadeInTop .5s ease-in-out;
+}
+
+@keyframes fadeInTop {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+/* Навигация */
+.navigation {
+    background-color: var(--color-dark);
+    color: var(--color-red);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #fff;
+}
+
+.logo span {
+    color: var(--color-red);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+.menu-item a {
+    color: var(--color-red);
+}
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+.nav-buttons a {
+    margin: 0 7px;
+}
+
+/* Регистрация */
+.register-form, .login-form {
+    width: 40%;
+    margin: 0 auto;
+}
+.register-form button, .login-form button {
+    width: 100%;
+}
+.register-title, .login-title {
+    margin: 50px 0;
+}
+.form-bottom-label {
+    text-align: right;
+    margin-top: 10px;
+}
+.form-bottom-label a {
+    color: var(--color-red);
+}
+
+/* Админка */
+.admin-container {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: var(--color-dark);
+}
+.sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+.admin-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu-item a {
+    color: var(--color-red);
+}
+
+.admin-menu-item {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.admin-menu-item.active-item {
+    border-left: 5px solid var(--color-red);
+    background-color: rgba(211,209,210, 0.25);
+    color: var(--color-red);
+}
+
+.admin-content {
+    padding: 50px;
+}
+
+.action-buttons-cell {
+    vertical-align: middle;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.table {
+    margin-top: 30px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-block {
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 20px;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+.filter-icon {
+    cursor: pointer;
+}
+
+.room-photos {
+    display: flex;
+}
+
+.room-photo-block {
+    position: relative;
+    margin-right: 20px;
+    border: 1px solid var(--color-dark);
+}
+.room-photo-block:last-child {
+    margin-right: 0;
+}
+
+
+.room-photo-block span {
+    background: var(--color-red);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Модальное окно */
+.modal-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 450px;
+    height: 300px;
+}
+
+.modal-buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-buttons button {
+    margin: 0 5px;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-text {
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal-text p {
+    margin-top: 30px;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+/* Главная */
+.rooms {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.room-block {
+    display: grid;
+    grid-template-columns: 300px auto;
+    border-radius: 22.5px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 20px;
+}
+
+.room-block:nth-child(3n) {
+    grid-column: 1 / 4;
+}
+
+.room-block {
+    background: #fff;
+    position: relative;
+}
+
+.room-block:nth-child(3n) {
+    overflow: hidden;
+}
+
+.room-block:nth-child(3n)::before, .room-block:nth-child(3n)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    transform: translate(50%, -50%) scale(5);
+}
+
+.room-block:nth-child(3n)::before {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-red);
+    box-shadow: -5px 5px 5px 0px rgba(247,79,77, 0.2);
+}
+
+.room-block:nth-child(3n)::after {
+    width: 70px;
+    height: 70px;
+    background-color: inherit;
+}
+
+.room-block:nth-child(6n)::before {
+    background-color: var(--color-dark);
+    box-shadow: -5px 5px 5px 0px rgba(34,34,34, 0.2);
+}
+
+.room-block.circle-square {
+    overflow: hidden;
+}
+.room-block.circle-square::before, .room-block.circle-square::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.room-block.circle-square::before {
+    top: 0;
+    transform: translate(50%, -50%) scale(1.5);
+    background-color: var(--color-dark);
+}
+
+.room-block.circle-square::after {
+    bottom: 0;
+    transform: translate(50%, 50%) rotate(45deg);
+    background-color: var(--color-red);
+    border-radius: 0;
+}
+
+.room-block.isosceles-triangles::before, .room-block.isosceles-triangles::after{
+    content: '';
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    z-index: 2;
+}
+
+.room-block.isosceles-triangles::before {
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 30%);
+    border-bottom: 50px solid var(--color-red);
+}
+
+.room-block.isosceles-triangles::after {
+    right: 0;
+    top: 0;
+    transform: translate(0, -30%) rotate(180deg);
+    border-bottom: 50px solid var(--color-dark);
+}
+
+.room-block.right-triangles::before, .room-block.right-triangles::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+}
+
+.room-block.right-triangles::before {
+    left: 0;
+    bottom: 0;
+    transform: translate(-20%, 20%);
+    border-bottom: 70px solid var(--color-red);
+    border-right: 70px solid transparent;
+}
+
+.room-block.right-triangles::after {
+    right: 0;
+    top: 0;
+    transform: translate(20%, -20%) rotate(-90deg);
+    border-bottom: 70px solid var(--color-dark);
+    border-left: 70px solid transparent;
+}
+
+.room-block__img {
+    transition: all .3s ease-in-out;
+}
+.room-block__img:hover {
+    transform: scale(1.1);
+}
+
+.room-block__img img {
+    width: 100%;
+    border-radius: 22.5px;
+}
+
+.room-block__text {
+    padding: 10px 20px;
+}
+
+.room-block__text h3 {
+    margin-bottom: 10px;
+}
+
+/* Отдельный номер */
+.room-images__image {
+    text-align: center;
+}
+
+.room-images__image img {
+    max-width: 800px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--color-red);
+}
+
+.room-booking {
+    padding-bottom: 50px;
+}
+
+/* Пагинация */
+.page-link {
+    color: var(--color-red);
+}
+.page-item.active .page-link {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: #fff;
+}
+
+.page-item:not(.active):not(.disabled):hover .page-link {
+    color: var(--color-red);
+}
+
+.form-control:focus, .form-select:focus, .btn-green:active, .btn-green-outline:active {
+    border-color: var(--color-red);
+    box-shadow: 0 0 0 .25rem rgba(250, 21, 21, 0.25)
+}
