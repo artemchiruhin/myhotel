@@ -13,10 +13,13 @@
 ## :cinema: Демонстрация проекта:
 
 Главная, регистрация, авторизация
+
 ![Demo](https://media.giphy.com/media/sDY2qdYvRCLSEnq18r/giphy.gif)
 
 Панель администратора
+
 ![Demo](https://media.giphy.com/media/mBLXio5znthvPt4XOW/giphy.gif)
 
 Функционал пользователя
+
 ![Demo](https://media.giphy.com/media/f0ILCO1Zq1o6HwWAJU/giphy.gif)
