@@ -80,7 +80,7 @@
 |   |   |   └── User
 |   |   |       └── Room.php
 |   |   ├── Middleware
-|   |   |   └── IsAdmin/php
+|   |   |   └── IsAdmin.php
 |   |   └── Requests
 |   |   |   ├── BookingFormRequest.php
 |   |   |   ├── CategoryFormRequest.php
