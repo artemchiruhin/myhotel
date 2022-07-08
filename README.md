@@ -48,9 +48,9 @@
 | 17 | /admin/orders/{order}/confirm | admin.orders.confirm | PUT | auth, admin | OrderController, confirm |
 | 18 | /admin/orders/report | admin.orders.report | POST | auth, admin | OrderController, report |
 
-## :deciduous_tree: Структура функциональной части проекта проекта
+## :deciduous_tree: Файловая структура функциональной части проекта проекта
 
-Что создано мной и **важно** показать. Как видите, всё распределено по своим разделам.
+Что создано мной. Как видите, всё распределено по своим разделам.
 ```
 .
 ├── app
